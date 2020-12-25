@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © ZT PWA, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="ztpwa_blog_theme_settings" resource="default" engine="innodb" comment="ZT PWA Theme Setting Table">
+        <column xsi:type="smallint" name="setting_id" padding="11" unsigned="false" nullable="false" identity="true"
+                comment="Setting ID"/>
+        <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Theme Name"/>
+        <column xsi:type="varchar" name="identifier" nullable="false" length="255"
+                comment="Theme Setting Identifier"/>
+        <column xsi:type="varchar" name="title" nullable="false" length="255" comment="Blog Title"/>
+        <column xsi:type="mediumtext" name="description" nullable="true" comment="Blog Short Description"/>
+        <column xsi:type="varchar" name="logo_url" nullable="false" length="255" comment="Blog Logo"/>
+        <column xsi:type="varchar" name="collapse_logo_url" nullable="false" length="255" comment="Collapse Blog Logo"/>
+        <column xsi:type="varchar" name="email_contact" nullable="false" length="255" comment="Email Contact"/>
+        <column xsi:type="varchar" name="phone_contact" nullable="false" length="255" comment="Phone Contact"/>
+        <column xsi:type="varchar" name="store_address" nullable="false" length="255" comment="Store Address"/>
+        <column xsi:type="varchar" name="main_banner" nullable="false" length="255" comment="Main Banner"/>
+        <column xsi:type="varchar" name="banner_title" nullable="false" length="255" comment="Main Banner Title"/>
+        <column xsi:type="mediumtext" name="banner_description" nullable="true" comment="Main Banner Text"/>
+        <column xsi:type="varchar" name="footer_copyright" nullable="true" length="255" comment="Footer Copyright"/>
+        <column xsi:type="varchar" name="facebook_url" nullable="true" length="255" comment="Facebook Page"/>
+        <column xsi:type="varchar" name="twitter" nullable="true" length="255" comment="Twitter Link"/>
+        <column xsi:type="varchar" name="instagram" nullable="true" length="255" comment="Instagram Link"/>
+        <column xsi:type="varchar" name="linkedin" nullable="true" length="255" comment="Linkedin Link"/>
+        <column xsi:type="varchar" name="pinterest" nullable="true" length="255" comment="Pinterest Link"/>
+        <column xsi:type="varchar" name="widget_one_title" nullable="true" length="255" comment="Widget One Title"/>
+        <column xsi:type="mediumtext" name="widget_one_text" nullable="true" comment="Widget One Text"/>
+        <column xsi:type="varchar" name="widget_two_title" nullable="true" length="255" comment="Widget Two Title"/>
+        <column xsi:type="mediumtext" name="widget_two_text" nullable="true" comment="Widget Two Text"/>
+        <column xsi:type="varchar" name="ga_code" nullable="true" length="255" comment="Google Analytic Code"/>
+        <column xsi:type="timestamp" name="creation_time" on_update="false" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="Theme Setting Creation Time"/>
+        <column xsi:type="timestamp" name="update_time" on_update="true" nullable="true"
+                comment="Theme Setting Modification Time"/>
+        <column xsi:type="tinyint" name="is_selected" padding="2" unsigned="false" nullable="false" identity="false"
+                default="1" comment="Is Selected Theme"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="setting_id"/>
+        </constraint>
+    </table>
+</schema>

@@ -1,0 +1,36 @@
+{
+  "ztpwa_blog_theme_settings": {
+    "column": {
+      "setting_id": true,
+      "name": true,
+      "identifier": true,
+      "title": true,
+      "logo_url": true,
+      "collapse_logo_url": true,
+      "email_contact": true,
+      "phone_contact": true,
+      "store_address": true,
+      "main_banner": true,
+      "banner_title": true,
+      "banner_description": true,
+      "footer_copyright": true,
+      "description": true,
+      "widget_one_title": true,
+      "widget_one_text": true,
+      "widget_two_title": true,
+      "widget_two_text": true,
+      "facebook_url": true,
+      "twitter": true,
+      "instagram": true,
+      "linkedin": true,
+      "pinterest": true,
+      "ga_code": true,
+      "creation_time": true,
+      "update_time": true,
+      "is_selected": true
+    },
+    "constraint": {
+      "PRIMARY": true
+    }
+  }
+}

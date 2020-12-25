@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright ZT. All rights reserved.
+ * See LICENSE.txt for license details (http://opensource.org/licenses/osl-3.0.php).
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="ZT\BlogTheme\Api\SettingRepositoryInterface" type="ZT\BlogTheme\Model\SettingRepository" />
+    <preference for="ZT\BlogTheme\Api\Data\SettingInterface" type="ZT\BlogTheme\Model\Setting" />
+</config>
