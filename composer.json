@@ -1,0 +1,36 @@
+{
+  "name": "zt2/blog-theme",
+  "type": "library",
+  "description": "Zorto PWA Theme(core) extension",
+  "keywords": [
+    "pwa",
+    "blog",
+    "extension",
+    "backend",
+    "theme"
+  ],
+  "homepage": "http://pwablog-m2.com/",
+  "license": "MIT",
+  "version": "1.0.1",
+  "require": {
+    "php": "~7.1.3||~7.2.0||~7.3.0",
+    "magento/framework": "^102"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "ZT\\BlogTheme\\": ""
+    }
+  },
+  "authors": [
+    {
+      "name": "Zorto PWA",
+      "email": "zorto.pwa@gmail.com",
+      "homepage": "http://pwablog-m2.com/",
+      "role": "Developer"
+    }
+  ]
+}
