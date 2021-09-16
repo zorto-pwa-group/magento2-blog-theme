@@ -35,7 +35,7 @@ class Save extends Action implements HttpPostActionInterface
      *
      * @see _isAllowed()
      */
-    const ADMIN_RESOURCE = 'ZT_BlogTheme::save_settings';
+    const ADMIN_RESOURCE = 'PWA_BlogTheme::save_settings';
 
     /**
      * @var ForwardFactory
